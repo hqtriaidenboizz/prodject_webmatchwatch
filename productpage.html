@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="productpage.css">
+    <title>TrackMate</title>
+</head>
+<body>
+    <div class="container">
+        <div id="menubar">
+            <div class="logo">
+                <div class="logo logo--icon">
+                    <i class="ri-steam-fill"></i>
+                </div>
+                <div class="logo logo--text">
+                    <a href="home.html">
+                    TrackMate
+                </a></div>    
+            </div>
+            <div class="menu-right">
+                <div class="menu-right-item menu-right--FAQ">
+                    <a href="">FAQ</a>
+                </div>
+                <div class=" menu-right-item menu-right__login">
+                    <div class="menu-right__login--icon">
+                        <i class="ri-account-circle-fill"></i>
+                    </div>
+                    <div class="menu-right__login--text">
+                        <a onclick="document.getElementById('id01').style.display='block'">Log In</a>
+                    </div>
+                </div>
+                <div class="menu-right-item menu-right__cart"> 
+                    <a onclick="openNav()"><i class="ri-shopping-cart-fill"></i></a>
+                </div>
+                <div class=" menu-right-item menu-right__buy">
+                    <a href="productpage.html"><button class="buy-now">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="img-product">
+                <div class="img-main">
+                    <img src="img/product-1.webp" alt="">
+                </div>
+                <div class="text-img">
+                    <p>I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.</p>
+                </div>
+            </div>
+            <div class="info-product">
+                <h1>0.4 TrackMate XE</h1>
+                <p>SKU: 0001</p>
+                <h5>$85.00</h5>
+                <div class="list-img">
+                    <label class="list-img-color">
+                        <input  type="radio" checked="checked" name="radio">
+                        <span class="checkmark  checkmark1"></span>
+                      </label>
+                      <label class="list-img-color">
+                        <input type="radio" name="radio">
+                        <span class="checkmark checkmark2"></span>
+                      </label>
+                      <label class="list-img-color">
+                        <input type="radio" name="radio">
+                        <span class="checkmark checkmark3"></span>
+                      </label>
+                      <label class="list-img-color">
+                        <input type="radio" name="radio">
+                        <span class="checkmark checkmark4"></span>
+                      </label>
+                      <label class="list-img-color">
+                        <input type="radio" name="radio">
+                        <span class="checkmark checkmark5"></span>
+                      </label>
+                </div>
+                <div >
+                    <label for="" class="quantity">Quantity:</label> <br>
+                    <input type="number" id="quantity" name="quantity" min="2" max="100" value="1">
+                </div>
+                <div class="button-Add" >
+                    <button class="buy-now">Add to Cart</button>
+                </div>
+                <div class="info-other">
+                    <button class="accordion">PRODUCT INFO</button>
+                    <div class="panel">
+                        <p>I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item.</p>
+                    </div>
+                    <button class="accordion">RETURN & REFUND POLICY</button>
+                    <div class="panel">
+                        <p>I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item.</p>
+                    </div>
+                    <button class="accordion">SHIPPING INFO</button>
+                    <div class="panel">
+                        <p>I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item.</p>
+                    </div>
+                </div>
+                <div class="icon-media">
+                    <i class="ri-messenger-fill"></i>
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-pinterest-fill"></i>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="footer-info">
+            <div class="left-info">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">TikTok</a>
+                <a href="">YouToBe</a>
+            </div>
+            <div class="left-info" >
+                <a href="">Terms&Conditions</a>
+                <a href="">Shipping&Return</a>
+                <a href="">PrivacyPolicy</a>
+            </div>
+        </div>
+        <hr width="75%">
+        <div class="footer-info2">
+            <div>
+                <a href="">© 2023 by TrackMate. Proudly created with Wix.com</a>
+            </div>
+            <div>
+                <img src="img/a.webp" alt="">
+                <img src="img/b.webp" alt="">
+                <img src="img/c.webp" alt="">
+                <img src="img/d.webp" alt="">
+                <img src="img/e.webp" alt="">
+                <img src="img/f.webp" alt="">
+                <img src="img/h.webp" alt="">
+                <img src="img/g.webp" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- info---------- -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>

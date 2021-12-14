@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+a::before {  
+  transform: scaleY(0);
+  transform-origin: bottom right;
+}
+
+a:hover::before {
+  transform: scaleY(1);
+  transform-origin: bottom left;
+}
+
+a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgb(132, 132, 218);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+a{
+  position: relative;
+  font-size: 5rem;
+  color: red;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+}
+</style>
+<body>
+  <a>Click Here</a>
+</body>
+</html>
