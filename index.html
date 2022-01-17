@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>TrackMate</title>
+</head>
+<body>
+    <div class="homepage">
+        <div id="menubar">
+            <div class="logo">
+                <div class="logo logo--icon">
+                    <i class="ri-steam-fill"></i>
+                </div>
+                <div class="logo logo--text">
+                    <a href="home.html">
+                    TrackMate
+                </a></div>    
+            </div>
+            <div class="menu-right">
+                <div class="menu-right-item menu-right--FAQ">
+                    <a href="">FAQ</a>
+                </div>
+                <div class=" menu-right-item menu-right__login">
+                    <div class="menu-right__login--icon">
+                        <i class="ri-account-circle-fill"></i>
+                    </div>
+                    <div class="menu-right__login--text">
+                        <a onclick="document.getElementById('id01').style.display='block'">Log In</a>
+                    </div>
+                </div>
+                <div class="menu-right-item menu-right__cart"> 
+                    <a onclick="openNav()"><i class="ri-shopping-cart-fill"></i></a>
+                </div>
+                <div class=" menu-right-item menu-right__buy">
+                    <a href="productpage.html"><button class="buy-now">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+          <!-- ----- test --- -->
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="imgcontainer">
+                <i class="ri-user-fill"></i>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>   
+                <button type="submit" class="form-login">Login</button>
+                <label>
+                  <input type="checkbox" style="color: white" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="buy-now">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+        <!-- -- end#################### -->
+        <!-- cart____________________ -->
+        <div id="myNav" class="overlay">
+            <a  class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="header-card">
+                  <p>MY CART</p>
+              </div>
+              <div class="body-cart">
+              </div>
+            </div>
+          </div>
+          <!-- end---------- -->
+        <div class="content-main">    
+            <div class="img-main">
+                <img src="img/img1.webp" alt="">
+            </div>
+            <div class="text-main">
+                <h3>
+                    Own Your Daily Routine
+                </h3>
+                <h1>
+                    0.4 TrackMate XE
+                </h1>
+                <h3>
+                    A health tracker that motivates you every step of the way
+                </h3>
+                 <a href="productpage.html"><button class="buy-now buy__now--item-1">Buy Now</button></a>
+            </div>
+        </div>
+        <div class="home-mid">
+            <div class="home-mid-left">
+                <div class='layer-opacity'>
+                </div>           
+            </div>
+            <div class="home-mid-right"> 
+            </div>
+            <div class="content-mid">
+                <div class="content-mid-text">
+                    <div class="icon-text">
+                        <div>
+                            <img src="img/icon-workout.webp" alt="">
+                        </div>
+                        <div>
+                        <p>WORKOUT TRACKING</p>
+                        </div>
+                    </div>
+                    <div class="text-bottom">
+                        <p id="a">Fine Tune Your Routine With Precise Workout Stats</p>
+                        <p id="b">
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-mid-img">
+                    <img src="img/img2.webp" alt="">
+                </div>
+            </div>
+        </div>
+  <!--------------------------------  -->
+  <div class="home-mid2">
+    <div class="home-mid-left2">           
+    </div>
+    <div class="home-mid-right2"> 
+    </div>
+    <div class="content-mid2">
+        <div class="content-mid-img2">
+            <img src="img/img3.webp" alt="">
+        </div>
+        <div class="content-mid-text2">
+            <div class="icon-text2">
+                <div>
+                    <img src="img/icon-notifical.webp" alt="">
+                </div>
+                <div>
+                <p>
+                    NOTIFICATION SYSTEM</p>
+                </div>
+            </div>
+            <div class="text-bottom2">
+                <p id="a">Fine Tune Your Routine With Precise Workout Stats</p>
+                <p id="b">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="producs">
+        <div class="content-mid-text3">
+            <div class="icon-text3">
+                <div>
+                    <img src="img/icon-easy.webp" alt="">
+                </div>
+            </div>
+            <div class="text-bottom3">
+                <p id="a">Match Your Band to  You</p>
+                <p id="b">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                </p>
+            </div>
+                <div>
+                    <div class="background-fixed">
+                        <img src="img/img4.webp" alt="">
+                    </div>           
+                </div>
+                <a href="productpage.html"><button class="buy-now buy__now--item-1">Buy Now</button></a>
+        </div>
+    </div>
+    <div class="alert-system">
+        <div class="content-mid-text4">
+            <div class="icon-text4">
+                <div>
+                    <img src="img/icon-!.webp" alt="">
+                </div>
+                <div>
+                <p>ALERT SYSTEM</p>
+                </div>
+            </div>
+            <div class="text-bottom4">
+                <p id="a">Let You Body Be Your Guide </p>
+                <p id="b">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="product-features">
+        <div>
+            <h1>0.4 TrackMate XE Specifications</h1>
+        </div>
+        <div class="features-top">
+            <div class="features1 features1a">
+                <div class="icon-text5">
+                    <div>
+                        <img src="img/iconpin.webp" alt="">
+                    </div>
+                    <div>
+                    <p>Bluetooth Connectivity</p>
+                    </div>
+                </div>
+                <div class="text-bottom5">
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. 
+                    </p>
+                </div>
+            </div>
+            <div class="features1 features1b">
+                <div class="icon-text5">
+                    <div>
+                        <img src="img/iconblu.webp" alt="">
+                    </div>
+                    <div>
+                    <p>Wireless Charging</p>
+                    </div>
+                </div>
+                <div class="text-bottom5">
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="img-features">
+            <img src="img/new.webp" alt="">
+        </div>
+        <div class="features-bottom">
+            <div class="features1 features1c">
+                <div class="icon-text5">
+                    <div>
+                        <img src="img/icon-nuoc.webp" alt="">
+                    </div>
+                    <div>
+                    <p>20 Hour Battery Life</p>
+                    </div>
+                </div>
+                <div class="text-bottom5">
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. 
+                    </p>
+                </div>
+            </div>
+            <div class="features1 features1d">
+                <div class="icon-text5">
+                    <div>
+                        <img src="img/iconwifi.webp" alt="">
+                    </div>
+                    <div>
+                    <p>Water Resistance</p>
+                    </div>
+                </div>
+                <div class="text-bottom5">
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a  class="a"href="productpage.html"><button class="buy-now buy__now--item-1">Buy Now</button></a>
+    </div>
+    <hr>
+    <div class="footer-1">
+        <div class="footer-1-text">
+            <h1>Subscribe and Get <br>
+                15% Off Your First Purchase</h1>
+        </div>
+        <div class="footer-1-input">
+            <div class="Sign-up-here">
+                <input type="text" placeholder="Sign up here">
+            </div>
+            <div class="Subscribe" >
+                <a href=""><button>Subscribe</button></a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="left-info">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">TikTok</a>
+                <a href="">YouToBe</a>
+            </div>
+            <div class="left-info" >
+                <a href="">Terms&Conditions</a>
+                <a href="">Shipping&Return</a>
+                <a href="">PrivacyPolicy</a>
+            </div>
+        </div>
+        <hr width="75%">
+        <div class="footer-info2">
+            <div>
+                <a href="">© 2023 by TrackMate. Proudly created with Wix.com</a>
+            </div>
+            <div>
+                <img src="img/a.webp" alt="">
+                <img src="img/b.webp" alt="">
+                <img src="img/c.webp" alt="">
+                <img src="img/d.webp" alt="">
+                <img src="img/e.webp" alt="">
+                <img src="img/f.webp" alt="">
+                <img src="img/h.webp" alt="">
+                <img src="img/g.webp" alt="">
+            </div>
+        </div>
+    </div>
+</div>     
+    <!-- header____scrollTop -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("menubar").style.top = "0";
+          } else {
+            document.getElementById("menubar").style.top = "-100px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <!-- opacity___img -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+    
+            $('.layer-opacity').css({
+            opacity: function() {
+                var elementHeight = $(this).height(),
+                opacity = ((elementHeight - scrollTop) / elementHeight);
+                return opacity;
+            }
+        });
+    });
+      </script>
+    <!-- login_______ -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- mynavbar-cart________ -->
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "30%";
+        }
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>
